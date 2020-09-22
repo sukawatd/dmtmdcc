@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>Weather</title>
+    <title>Student's problem form</title>
     <link rel="icon" href="/img/weather.png">
     <link rel="stylesheet" href="/css/styles.css">
 </head>
@@ -12,11 +12,134 @@
     <div class="main-content">
         {{>header}}
 
-        <p>Use this site to get your weather!</p>
-
         <form>
-            <input placeholder="Location">
-            <button>Search</button>
+            <div class="div-border">
+                <label class="container">สถานะอยู่ในเกณฑ์ <font color="red">*</font></label>
+                <select class="container">
+                    <option value="ปานกลาง">ปานกลาง</option>
+                    <option value="อันตราย">อันตราย</option>
+                </select>
+            </div>
+            <div class="div-border">
+                <label class="container">ครั้งที่ (ในการให้คำปรึกษา) <font color="red">*</font></label>
+                <input class="container" placeholder="1">
+            </div>
+            <div class="div-border">
+                <label class="container">ช่องทางการติดต่อนักศึกษา <font color="red">*</font></label>
+                <select class="container">
+                    <option value="Walk in">Walk in</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Line">Line</option>
+                    <option value="โทรศัพท์">โทรศัพท์</option>
+                </select>
+            </div>
+            <div class="div-border">
+                <label class="container">ชื่อ - สกุล <font color="red">*</font></label>
+                <input class="container" placeholder="ชื่อ นามสกุล">
+            </div>
+            <div class="div-border">
+                <label class="container">รหัสนักศึกษา <font color="red">*</font></label>
+                <input class="container" placeholder="รหัสนักศึกษา">
+            </div>
+            <div class="div-border">
+                <label class="container">เบอร์โทรผู้ปกครอง <font color="red">*</font></label>
+                <input placeholder="เบอร์โทรผู้ปกครอง">
+            </div>
+            <div class="div-border">
+                <label>ชื่อร้านสาขา <font color="red">*</font></label>
+                <input class="container" placeholder="ชื่อร้านสาขา">
+            </div>
+            <div class="div-border">
+                <label class="container">เบอร์โทรร้าน <font color="red">*</font></label>
+                <input class="container" placeholder="เบอร์โทรร้าน">
+            </div>
+            <div class="div-border">
+                <label class="container">กลุ่มเรียน <font color="red">*</font></label>
+                <select class="container">
+                    <option value="A ทวิภาคี">A ทวิภาคี</option>
+                    <option value="A Walk in">A Walk in</option>
+                    <option value="B ทวิภาคี">B ทวิภาคี</option>
+                    <option value="B Walk in">B Walk in</option>
+                    <option value="AEC">AEC</option>
+                    <option value="พนักงาน">พนักงาน</option>
+                </select>
+            </div>
+            <div class="div-border">
+                <label class="container">ปัญหาที่พบ <font color="red">*</font></label>
+                <select class="container">
+                    <option value="ด้านการเรียน">ด้านการเรียน</option>
+                    <option value="ด้านการเงิน">ด้านการเงิน</option>
+                    <option value="ด้านทุจริต(วินัย:กระบวนการทำงานในร้าน)">ด้านทุจริต(วินัย:กระบวนการทำงานในร้าน)</option>
+                    <option value="ด้านทุจริต(วินัย:ทานหรือใช้สินค้าในร้าน)">ด้านทุจริต(วินัย:ทานหรือใช้สินค้าในร้าน)</option>
+                    <option value="ด้านทุจริต(วินัย:ทานสินค้าตัดจ่าย)">ด้านทุจริต(วินัย:ทานสินค้าตัดจ่าย)</option>
+                    <option value="ด้านทุจริต(วินัย:ชู้สาว)">ด้านทุจริต(วินัย:ชู้สาว)</option>
+                    <option value="ด้านทุจริต(การเงิน:ขโมยเงินในร้าน/คูปอง/สแตมป์)">ด้านทุจริต(การเงิน:ขโมยเงินในร้าน/คูปอง/สแตมป์)</option>
+                    <option value="ด้านการฝึกงาน(FC/ผจก./ผช.)">ด้านการฝึกงาน(FC/ผจก./ผช.)</option>
+                    <option value="ด้านการฝึกงาน(เพื่อนร่วมงาน)">ด้านการฝึกงาน(เพื่อนร่วมงาน)</option>
+                    <option value="ด้านการฝึกงาน(วินัยในการทำงาน เช่น ขาดงาน มาสาย)">ด้านฝึกงาน(วินัยในการทำงาน เช่น ขาดงาน มาสาย)</option>
+                    <option value="ด้านการฝึกงาน(การเดินทาง)">ด้านการฝึกงาน(การเดินทาง)</option>
+                    <option value="ด้านการฝึกงาน(ไม่ชอบสายอาชีพนี้)">ด้านการฝึกงาน(ไม่ชอบสายอาชีพนี้)</option>
+                    <option value="ด้านการฝึกงาน(บังคับซื้อสินค้าในร้าน/ทำยอด)">ด้านการฝึกงาน(บังคับซื้อสินค้าในร้าน/ทำยอด)</option>
+                    <option value="ด้านการฝึกงาน(เบี้ยเลี้ยง)">ด้านการฝึกงาน(เบี้ยเลี้ยง)</option>
+                    <option value="ด้านปัญหาส่วนตัว(ตั้งครรภ์)">ด้านปัญหาส่วนตัว(ตั้งครรภ์)</option>
+                    <option value="ด้านปัญหาส่วนตัว(สุขภาพ)">ด้านปัญหาส่วนตัว(สุขภาพ)</option>
+                    <option value="ด้านปัญหาส่วนตัว(ย้ายสถานศึกษา)">ด้านปัญหาส่วนตัว(ย้ายสถานศึกษา)</option>
+                    <option value="ด้านปัญหาส่วนตัว(ครอบครัว)">ด้านปัญหาส่วนตัว(ครอบครัว)</option>
+                    <option value="ด้านปัญหาส่วนตัว(ไม่จบการศึกษาจากสถาบันเดิม)">ด้านปัญหาส่วนตัว(ไม่จบการศึกษาจากสถาบันเดิม)</option>
+                    <option value="ด้านปัญหาส่วนตัว(ความรัก)">ด้านปัญหาส่วนตัว(ความรัก)</option>
+                    <option value="ด้านอื่นๆ(กรุณาระบุสาเหตุในรายละเอียดการให้คำปรึกษา)">ด้านอื่นๆ(กรุณาระบุสาเหตุในรายละเอียดการให้คำปรึกษา)</option>
+                </select>
+            </div>
+            <div class="div-border">
+                <label class="container">รายละเอียดของปัญหา <font color="red">*</font></label>
+                <input class="container" placeholder="รายละเอียดของปัญหา">
+            </div>
+            <div class="div-border">
+                <label class="container">การให้คำปรึกษาและแนวทางการแก้ไขปัญหา <font color="red">*</font></label>
+                <input class="container" placeholder="การให้คำปรึกษาและแนวทางการแก้ไขปัญหา">
+            </div>
+            <div class="div-border">
+                <label class="container">วัน-เดือน-ปี ที่ให้คำปรึกษา <font color="red">*</font></label>
+                <input type="date" class="container">
+            </div>
+            <div class="div-border">
+                <label class="container">หลักฐานการให้คำปรึกษา <font color="red">*</font></label>
+                <input type="file" class="container">
+            </div>
+            <div class="div-border">
+                <label class="container">ผู้กรอกข้อมูลการให้คำปรึกษา <font color="red">*</font></label>
+                <select class="container">
+                    <option value="อาจารย์ที่ปรึกษา">อาจารย์ที่ปรึกษา</option>
+                    <option value="ผู้จัดการฝ่าย">ผู้จัดการฝ่าย</option>
+                    <option value="เจ้าหน้าที่อาวุโส">เจ้าหน้าที่อาวุโส</option>
+                    <option value="เจ้าหน้าที่ SC อาวุโส">เจ้าหน้าที่ SC อาวุโส</option>
+                    <option value="เจ้าหน้าที่">เจ้าหน้าที่</option>
+                    <option value="เจ้าหน้าที่ SC">เจ้าหน้าที่ SC</option>
+                </select>
+            </div>
+            <div class="div-border">
+                <label class="container">ลายเซ็นผู้ให้คำปรึกษา <font color="red">*</font></label>
+                <input type="file" class="container">
+            </div>
+            <div class="div-border">
+                <label class="container">สถานการให้คำปรึกษา <font color="red">*</font></label>
+                <select class="container">
+                    <option value="สิ้นสุดการให้คำปรึกษาเนื่องจากนักศึกษายืนยันลาออก">สิ้นสุดการให้คำปรึกษาเนื่องจากนักศึกษายืนยันลาออก</option>
+                    <option value="สิ้นสุดการให้คำปรึกณาเนื่องจากสถานการณ์ดีขึ้น(กลับมาเป็นปรกติ)">สิ้นสุดการให้คำปรึกณาเนื่องจากสถานการณ์ดีขึ้น(กลับมาเป็นปรกติ)</option>
+                    <option value="รอติดตามเพื่อให้คำปรึกษาในครั้งต่อไป">รอติดตามเพื่อให้คำปรึกษาในครั้งต่อไป</option>
+                </select>
+            </div>
+            <div class="div-border">
+                <label class="container">E-Mail <font color="red">*</font></label>
+                <small class="container">กรอก E-Mail ของท่านสำหรับรับรายงานการ Consult</small>
+                <input class="container" placeholder="email adress">
+            </div>
+
+            <button style="margin:20px;padding: 15px 32px;background-color: #008CBA;border-radius: 12px;">Submit</button>
+            {{!-- <div>
+                <input placeholder="Location">
+                <button>Search</button>
+            </div> --}}
         </form>
         <p id="message-1"></p>
         <p id="message-2"></p>
