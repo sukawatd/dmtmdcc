@@ -23,7 +23,12 @@ app.use(express.static(publicDirectoryPath))
 app.get('', (req, res) => {
     res.render('index', {
         title: 'แบบรายงานการให้คำปรึกษา - แก้ไขปัญหา นักศึกษา',
-        name: 'Sukawat Dokkum'
+        name: 'Sukawat Dokkum',
+        q1: { title: 'สถานะอยู่ในเกณฑ์',
+              name: 'q1',
+              datas: ['บานกลาง', 'อันตราย']},
+        q2: { title: 'ช่องทางการติดต่อนักศึกษา', 
+              data: ['Walk in', 'Facebook', 'Line', 'โทรศัพท์']}        
     })
 })
 
