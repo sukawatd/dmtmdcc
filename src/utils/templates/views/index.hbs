@@ -11,8 +11,8 @@
 <body>
     <div class="main-content">
         {{>header}}
-        <form action="/form" enctype="multipart/form-data
-        " method="POST">
+        <img id="output" width="200" />
+        <form>
 
             {{>listinput q1}}
 
@@ -49,16 +49,12 @@
             {{>textinput q17}}
 
 
-            <button type="submit" style="margin:20px;padding: 15px 32px;background-color: #008CBA;border-radius: 12px;">Submit</button>
+            <button style="margin:20px;padding: 15px 32px;background-color: #008CBA;border-radius: 12px;">Submit</button>
             {{!-- <div>
                 <input placeholder="Location">
                 <button>Search</button>
             </div> --}}
-
         </form>
-        <div>
-            <img id="output"  class="portrait">
-        </div>
         <p id="message-1"></p>
         <p id="message-2"></p>
     </div>
